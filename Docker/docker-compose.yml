@@ -1,0 +1,10 @@
+web:
+  build: .  
+  ports:
+   - "3000:5000"
+  links:
+   - redis
+  container_name: webserver
+redis:
+  image: redis:latest
+  container_name: redis
