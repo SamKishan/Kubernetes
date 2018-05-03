@@ -3,9 +3,9 @@ The command to do that is
 ```
 minikube start
 ```
-Make sure your docker client points to the docker engine running on the minikube VM using the command eval 
+Make sure your docker client points to the docker engine running on the minikube VM using the command 
 ```
-$(minikube docker-env) 
+eval $(minikube docker-env) 
 ```
 Now the samkishan/web2 docker image needs to be build. So, go to the ./Kube/Docker directory and exeute
 ``` 
